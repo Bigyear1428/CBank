@@ -12,6 +12,7 @@ int main() {
     // 기본 관리자 계정 생성
     users.emplace_back("admin", "admin123");
 
+    // 첫 화면 
     while (true) {
         std::cout << "\n===== CBank++ 사용자 메뉴 =====\n";
         std::cout << "1. 회원가입\n";
