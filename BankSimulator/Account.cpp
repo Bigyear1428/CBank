@@ -1,17 +1,10 @@
 // Account.cpp - Account 클래스의 구현 파일
 #include "Account.h"
+#include "utils.h"
 #include <iomanip>
 #include <sstream>
 #include <chrono>
 #include <ctime>
-
-// 금액을 콤마 포함된 문자열로 변환하는 함수
-std::string formatWithCommas(double value) {
-    std::stringstream ss;
-    ss.imbue(std::locale(""));
-    ss << std::fixed << std::setprecision(0) << value;
-    return ss.str();
-}
 
 // 현재 시간 문자열을 반환하는 함수 (예: 2025-04-30 22:35)
 std::string getCurrentTimeString() {
